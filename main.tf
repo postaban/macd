@@ -5,8 +5,8 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "<replace-with-s3-bucket>"
-    key    = "eu-west-1/tfstate.json"
-    region = "eu-west-1"
+    key    = "us-west-2/tfstate.json"
+    region = "us-west-2"
     dynamodb_table = "<replace-with-dynamodb-table>"
     encrypt = true
   }
